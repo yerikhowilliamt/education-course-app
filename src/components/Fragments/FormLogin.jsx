@@ -27,7 +27,7 @@ const FormLogin = () => {
         label="Kata Sandi"
         type="password"
         name="password"
-        src="/public/icons/eye-off icon.png"
+        src="/icons/eye-off icon.png"
         border="w-6 h-6"
         classname="w-full p-2"
       />
@@ -50,7 +50,7 @@ const FormLogin = () => {
       </span>
       <Button
         classname="w-full flex justify-center gap-2 text-body-medium font-bold text-[#4A505C] p-2 rounded-xl border"
-        src="/public/icons/Google icon.png"
+        src="/icons/Google icon.png"
         submit="submit"
       >
         Masuk dengan Google
