@@ -33,16 +33,16 @@ const Footer = () => {
       </p>
       <div className="flex gap-[15px]">
         <Link to="" className="w-9 h-9 border-2 rounded-full p-1.5">
-          <img src="/public/icons/Linkedin Icon.png" alt="" />
+          <img src="/icons/Linkedin Icon.png" alt="" />
         </Link>
         <Link to="" className="w-9 h-9 border-2 rounded-full p-1.5">
-          <img src="/public/icons/Facebook Icon.png" alt="" />
+          <img src="/icons/Facebook Icon.png" alt="" />
         </Link>
         <Link to="" className="w-9 h-9 border-2 rounded-full p-1.5">
-          <img src="/public/icons/Instagram Icon.png" alt="" />
+          <img src="/icons/Instagram Icon.png" alt="" />
         </Link>
         <Link to="" className="w-9 h-9 border-2 rounded-full p-1.5">
-          <img src="/public/icons/Twitter icon.png" alt="" />
+          <img src="/icons/Twitter icon.png" alt="" />
         </Link>
       </div>
     </div>
