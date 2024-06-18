@@ -104,7 +104,7 @@ const Profile = () => {
 };
 
 const ProfileBar = () => {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (
@@ -192,7 +192,7 @@ const ButtonRegister = () => {
 };
 
 const ButtonBar = () => {
-  const [click, setClick] = useState(true);
+  const [click, setClick] = useState(false);
   const handleClick = () => setClick(!click);
 
   return (

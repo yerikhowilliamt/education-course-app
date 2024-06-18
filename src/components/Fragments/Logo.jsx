@@ -5,7 +5,7 @@ const Logo = ({ children, classname }) => {
   return (
     <div className={classname}>
       <Link to="">
-        <img src="/public/Logo.svg" alt="" />
+        <img src="/Logo.svg" alt="" />
       </Link>
       {children}
     </div>

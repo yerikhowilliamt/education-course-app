@@ -30,48 +30,48 @@ const Body = () => {
   const product = [
     {
       id: 1,
-      img: "/public/images/img-01.png",
-      avatar: "/public/avatars/Avatar-01.png",
+      img: "/images/img-01.png",
+      avatar: "/avatars/Avatar-01.png",
     },
     {
       id: 2,
-      img: "/public/images/img-02.png",
-      avatar: "/public/avatars/Avatar-02.png",
+      img: "/images/img-02.png",
+      avatar: "/avatars/Avatar-02.png",
     },
     {
       id: 3,
-      img: "/public/images/img-03.png",
-      avatar: "/public/avatars/Avatar-03.png",
+      img: "/images/img-03.png",
+      avatar: "/avatars/Avatar-03.png",
     },
     {
       id: 4,
-      img: "/public/images/img-04.png",
-      avatar: "/public/avatars/Avatar-04.png",
+      img: "/images/img-04.png",
+      avatar: "/avatars/Avatar-04.png",
     },
     {
       id: 5,
-      img: "/public/images/img-05.png",
-      avatar: "/public/avatars/Avatar-05.png",
+      img: "/images/img-05.png",
+      avatar: "/avatars/Avatar-05.png",
     },
     {
       id: 6,
-      img: "/public/images/img-06.png",
-      avatar: "/public/avatars/Avatar-06.png",
+      img: "/images/img-06.png",
+      avatar: "/avatars/Avatar-06.png",
     },
     {
       id: 7,
-      img: "/public/images/img-07.png",
-      avatar: "/public/avatars/Avatar-07.png",
+      img: "/images/img-07.png",
+      avatar: "/avatars/Avatar-07.png",
     },
     {
       id: 8,
-      img: "/public/images/img-08.png",
-      avatar: "/public/avatars/Avatar-08.png",
+      img: "/images/img-08.png",
+      avatar: "/avatars/Avatar-08.png",
     },
     {
       id: 9,
-      img: "/public/images/img-09.png",
-      avatar: "/public/avatars/Avatar-09.png",
+      img: "/images/img-09.png",
+      avatar: "/avatars/Avatar-09.png",
     },
   ];
   
