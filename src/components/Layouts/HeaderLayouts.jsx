@@ -192,7 +192,7 @@ const ButtonRegister = () => {
 };
 
 const ButtonBar = () => {
-  const [click, setClick] = useState(false);
+  const [click, setClick] = useState(true);
   const handleClick = () => setClick(!click);
 
   return (
