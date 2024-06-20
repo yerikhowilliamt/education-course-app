@@ -67,36 +67,24 @@ const Profile = () => {
       >
         <ul className="flex flex-col items-center bg-white w-[200px] border">
           <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
-            <Link
-              to="/profile"
-            >
-              Profile Saya
-            </Link>
+            <Link to="/profile">Profile Saya</Link>
           </li>
           <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
-            <Link
-              to="/"
-            >
-              Kelas Saya
-            </Link>
+            <Link to="/">Kelas Saya</Link>
           </li>
           <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
-            <Link
-              to="/"
-            >
-              Pesanan Saya
-            </Link>
+            <Link to="/">Pesanan Saya</Link>
           </li>
-            <li className="w-full h-[54px] items-center py-4 px-3 text-main-tertiary font-medium font-body font-body-medium border-b">
-              <Link className="flex gap-[5px] w-6 h-6 items-center">
+          <li className="w-full h-[54px] items-center py-4 px-3 text-main-tertiary font-medium font-body font-body-medium border-b">
+            <Link className="flex gap-[5px] w-6 h-6 items-center">
               Keluar
               <img
                 className="w-5 h-[18px]"
                 src="/icons/Logout icon.png"
                 alt=""
               />
-              </Link>
-            </li>
+            </Link>
+          </li>
         </ul>
       </div>
     </>
@@ -152,7 +140,7 @@ const ProfileBar = () => {
           <Link to="/profile">
             <li className="w-screen h-[54px] flex gap-[5px] items-center py-4 px-3 text-main-tertiary font-medium font-body font-body-medium border-b">
               Keluar
-              <img src="/public/icons/Logout icon.png" alt="" />
+              <img src="/icons/Logout icon.png" alt="" />
             </li>
           </Link>
         </ul>
