@@ -92,7 +92,7 @@ const Profile = () => {
               Keluar
               <img
                 className="w-5 h-[18px]"
-                src="/public/icons/Logout icon.png"
+                src="/icons/Logout icon.png"
                 alt=""
               />
               </Link>

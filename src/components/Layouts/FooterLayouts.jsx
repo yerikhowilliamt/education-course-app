@@ -65,11 +65,13 @@ const Address = () => {
 };
 
 const Tabs = () => {
-  return <div className="flex md:flex-row flex-col md:gap-12 gap-3 h-full">
-    <Kategori/>
-    <Perusahaan/>
-    <Komunitas/>
-  </div>;
+  return (
+    <div className="flex md:flex-row flex-col md:gap-12 gap-3 h-full">
+      <Kategori />
+      <Perusahaan />
+      <Komunitas />
+    </div>
+  );
 };
 
 const Kategori = () => {
@@ -79,13 +81,25 @@ const Kategori = () => {
         Kategori
       </span>
       <ul className="md:flex hidden flex-col gap-[13px]">
-        <List classname="text-body-medium text-dark-secondary font-body">Digital & Teknologi</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Pemasaran</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Manjemen Bisnis</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Pengembangan Diri</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Desain</List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Digital & Teknologi
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Pemasaran
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Manjemen Bisnis
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Pengembangan Diri
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Desain
+        </List>
       </ul>
-      <Link to="" className="md:hidden flex"><img src="/public/icons/Arrow Icon.png" alt="" /></Link>
+      <Link to="" className="md:hidden flex">
+        <img src="/icons/Arrow Icon.png" alt="" />
+      </Link>
     </div>
   );
 };
@@ -97,13 +111,25 @@ const Perusahaan = () => {
         Perusahaan
       </span>
       <ul className="md:flex hidden flex-col gap-[13px]">
-        <List classname="text-body-medium text-dark-secondary font-body">Tentang Kami</List>
-        <List classname="text-body-medium text-dark-secondary font-body">FAQ</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Kebijakan Privasi</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Ketentuan Layanan</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Bantuan</List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Tentang Kami
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          FAQ
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Kebijakan Privasi
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Ketentuan Layanan
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Bantuan
+        </List>
       </ul>
-      <Link to="" className="md:hidden flex"><img src="/public/icons/Arrow Icon.png" alt="" /></Link>
+      <Link to="" className="md:hidden flex">
+        <img src="/icons/Arrow Icon.png" alt="" />
+      </Link>
     </div>
   );
 };
@@ -115,10 +141,16 @@ const Komunitas = () => {
         Komunitas
       </span>
       <ul className="md:flex hidden flex-col gap-[13px]">
-        <List classname="text-body-medium text-dark-secondary font-body">Tips Sukses</List>
-        <List classname="text-body-medium text-dark-secondary font-body">Blog</List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Tips Sukses
+        </List>
+        <List classname="text-body-medium text-dark-secondary font-body">
+          Blog
+        </List>
       </ul>
-      <Link to="" className="md:hidden flex"><img src="/public/icons/Arrow Icon.png" alt="" /></Link>
+      <Link to="" className="md:hidden flex">
+        <img src="/icons/Arrow Icon.png" alt="" />
+      </Link>
     </div>
   );
 };
