@@ -2,7 +2,6 @@
 
 VIDEO Learning Platform
 
-=======
 ![iPhone 12 Pro](https://github.com/yerikhowilliamt/education-course-app/assets/168539848/273cfa9b-fc24-44f5-b901-1daa1230c8e9)
 
 
