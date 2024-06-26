@@ -6,11 +6,14 @@ import LoginPage from "./pages/login.jsx";
 import RegisterPage from "./pages/register.jsx";
 import ErrorPage from "./pages/error.jsx";
 import ProductsPage from "./pages/product.jsx";
+import AllProductPage from "./pages/allProductPage.jsx";
+import DetailProductPage from "./pages/detailProductPage.jsx";
+import CartPage from "./pages/cartPage.jsx";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <ProductsPage page ="landingpage"/>,
+    element: <ProductsPage page="landingpage" />,
     errorElement: <ErrorPage />,
   },
   {
@@ -23,7 +26,19 @@ const router = createBrowserRouter([
   },
   {
     path: "/beranda",
-    element: <ProductsPage/>,
+    element: <ProductsPage page="beranda" />,
+  },
+  {
+    path: "/kategori",
+    element: <AllProductPage/>,
+  },
+  {
+    path: "/detail",
+    element: <DetailProductPage/>,
+  },
+  {
+    path: "/keranjang",
+    element: <CartPage />,
   },
 ]);
 

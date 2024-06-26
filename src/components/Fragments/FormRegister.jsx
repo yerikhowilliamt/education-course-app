@@ -4,15 +4,19 @@ import InputPhonenumber from "../Elements/Input/InputPhonenumber";
 import InputLabel from "../Elements/Input/InputLabel";
 
 const FormRegister = () => {
+  const handleRegister = (event) => {
+    event.preventDefault();
+    window.location.href = "/login"
+  }
+
   const handleLogin = (event) => {
     event.preventDefault();
     window.location.href = "/login"
-
   }
 
   return (
     <form
-      action=""
+      onSubmit={handleRegister}
       className="w-full flex flex-col gap-6 items-center justify-between"
     >
       <InputLabel
@@ -56,7 +60,7 @@ const FormRegister = () => {
         Lupa Password?
       </Link>
       <div className="flex flex-col w-full gap-4">
-        <Button onClick={handleLogin} classname="w-full bg-main-primary text-body-medium font-bold text-light-primary p-2 rounded-xl">
+        <Button type="submit" classname="w-full bg-main-primary text-body-medium font-bold text-light-primary p-2 rounded-xl">
           Daftar
         </Button>
         <Button onClick={handleLogin} classname="w-full bg-main-primary-100 text-body-medium font-bold text-primary p-2 rounded-xl">

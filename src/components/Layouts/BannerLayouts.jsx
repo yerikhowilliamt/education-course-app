@@ -4,14 +4,14 @@ import BannerProduct from "../Fragments/BannerProduct";
 const BannerLayouts = ({ type, background }) => {
   return (
     <BannerProduct background={background}>
-      {type === "course" ? <CourseBanner /> : <NewsletterBanner />}
+      {type === "uiux" ? <UiUx/> : type === "course" ? <CourseBanner/> : <NewsletterBanner/>}
     </BannerProduct>
   );
 };
 
 const CourseBanner = () => {
   return (
-    <div className="absolute md:top-52 top-26 flex flex-col gap-6 items-center z-10">
+    <div className="absolute md:top-22 top-26 flex flex-col gap-6 items-center z-10">
       <div className="md:w-[920px] w-[280px] flex flex-col gap-3">
         <h1 className="md:text-h1 text-h4 font-heading font-bold text-center text-light-primary leading-[26.4px] md:leading-[52.8px]">
           Revolusi Pembelajaran: Temukan Ilmu Baru melalui Platform Video
@@ -57,6 +57,28 @@ const NewsletterBanner = () => {
         <Button classname="w-[123px] md:w-[132px] h-10 md:h-42px py-2.5 px-[26px] md:text-body-medium text-body-small font-bold text-light-primary bg-main-secondary rounded-lg">
           Subscribe
         </Button>
+      </div>
+    </div>
+  );
+};
+
+const UiUx = () => {
+  return (
+    <div className="absolute top-[154rem] md:top-[20rem] 2xl:top-[20rem] md:left-[15rem] 2xl:left-[35rem] w-[280px] md:w-[525px] flex flex-col justify-center z-10">
+      <div className="w-[280px] md:w-[900px] flex flex-col gap-3 p-2">
+        <h2 className="text-h2 text-light-primary font-heading font-semibold leading-[44px]">
+        Gapai Karier Impianmu sebagai Seorang UI/UX Designer & Product Manager.
+        </h2>
+        <p className="text-body-medium text-light-primary font-body font-medium">
+          Belajar bersama tutor profesional di Video Course. <br />
+          Kapanpun, di manapun.
+        </p>
+      </div>
+      <div className="flex md:h-6 mt-4">
+        <img className="" src="/icons/Rating.png" alt="" />
+        <span className="border-b-2 font-medium text-light-secondary">
+          3.5 (86)
+        </span>
       </div>
     </div>
   );

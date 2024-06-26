@@ -1,11 +1,20 @@
-const CardProduct = ({ productImage, avatar }) => {
+import { useState } from "react";
+
+const CardProduct = ({ productImage, avatar, price }) => {
+  const [click, setClick] = useState();
+  const handleClick = (event) => {
+    event.preventDefault();
+    setClick(!click)
+    window.location.href="/detail"
+  }
+
   return (
-    <div className="2xl:w-[535px] md:w-[388px] w-full md:h-[426px] 2xl:h-full flex flex-col md:gap-4 gap-3 p-5 bg-white border rounded-[10px]">
+    <div onClick={handleClick} className="2xl:w-[535px] md:w-[388px] w-full md:h-[426px] 2xl:h-full flex flex-col md:gap-4 gap-3 p-5 bg-white border rounded-[10px]">
       <div className="w-full h-[83px] flex md:flex-col gap-3 md:gap-4">
         <Header productImage={productImage}></Header>
         <Body avatar={avatar}></Body>
       </div>
-      <Footer></Footer>
+      <Footer price={price}></Footer>
     </div>
   );
 };
@@ -56,18 +65,18 @@ const Body = ({ avatar }) => {
   );
 };
 
-const Footer = () => {
+const Footer = ({price}) => {
   return (
     <a href="">
       <div className="w-full h-7 flex justify-between items-center md:mt-64 2xl:mt-[21rem]">
         <div className="flex gap-2 h-[20px]">
-          <img src="/public/icons/Rating.png" alt="" />
+          <img src="/icons/Rating.png" alt="" />
           <span className="border-b-2 font-medium text-dark-secondary">
             3.5 (86)
           </span>
         </div>
         <h4 className="md:text-h4 text-h5 font-heading font-semibold text-primary">
-          Rp 300K
+          {price}
         </h4>
       </div>
     </a>

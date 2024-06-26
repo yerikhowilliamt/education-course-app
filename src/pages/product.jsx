@@ -7,7 +7,7 @@ import BannerLayouts from "../components/Layouts/BannerLayouts";
 const ProductsPage = ({ page }) => {
   return (
     <>
-      <HeaderLayouts position="relative" type="product" page={page} />
+      <HeaderLayouts position="fixed" type="product" color="text-dark-secondary" page={page} />
       <MainLayouts gap="md:gap-16 gap-6">
         <BannerLayouts type="course" background="bg-course" />
         <CardLayouts />

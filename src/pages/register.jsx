@@ -7,7 +7,7 @@ const RegisterPage = () => {
   return (
     <>
       <HeaderLayouts position="relative"/>
-      <MainLayouts>
+      <MainLayouts items="items-center">
         <FormLayouts
           title="Pendaftaran Akun"
           description="Yuk, daftarkan akunmu sekarang juga!"

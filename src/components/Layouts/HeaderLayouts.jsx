@@ -3,13 +3,13 @@ import { Link } from "react-router-dom";
 import { useState } from "react";
 import Logo from "../Fragments/Logo";
 
-const HeaderLayouts = ({ position, type, page }) => {
+const HeaderLayouts = ({ position, type, page, color }) => {
   return (
     <nav
-      className={`${position} w-screen md:h-20 h-[74px] bg-white flex justify-between items-center md:py-3 py-4 md:px-[120px] px-8 shadow-xl z-10`}
+      className={`${position} w-screen md:h-20 h-[74px] bg-white flex justify-between items-center md:px-[120px] px-6 md:py-3 py-4 shadow-lg z-10`}
     >
       <Header />
-      {type === "product" ? <Body page={page} /> : ""}
+      {type === "product" ? <Body page={page} color={color}/> : ""}
     </nav>
   );
 };
@@ -20,25 +20,25 @@ const Header = () => {
   );
 };
 
-const Body = ({ page }) => {
+const Body = ({ page, color }) => {
   return (
     <>
       <ul className="md:flex hidden items-center gap-6">
-        {page === "landingpage" ? <ButtonRegister /> : <Profile />}
+        {page === "landingpage" ? <ButtonRegister /> : <Profile color={color} />}
       </ul>
       {page === "landingpage" ? <ButtonBar /> : <ProfileBar />}
     </>
   );
 };
 
-const Profile = () => {
+const Profile = ({color}) => {
   const [click, setClick] = useState(true);
   const handleClick = () => setClick(!click);
 
   return (
     <>
       <Link to="/kategori">
-        <li className="text-dark-secondary font-bold font-body font-body-medium">
+        <li className={`${color} font-bold font-body font-body-medium`}>
           Kategori
         </li>
       </Link>
@@ -62,18 +62,18 @@ const Profile = () => {
       </div>
       <div
         className={
-          click ? "hidden" : "absolute top-[4.5rem] right-[7.5rem] z-10"
+          click ? "hidden" : "absolute top-[4.6rem] right-[7.5rem] z-10"
         }
       >
         <ul className="flex flex-col items-center bg-white w-[200px] border">
-          <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
+          <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
             <Link to="/profile">Profile Saya</Link>
           </li>
-          <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
+          <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
             <Link to="/">Kelas Saya</Link>
           </li>
-          <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
-            <Link to="/">Pesanan Saya</Link>
+          <li className="w-full h-[54px] items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
+            <Link to="/keranjang">Pesanan Saya</Link>
           </li>
           <li className="w-full h-[54px] items-center py-4 px-3 text-main-tertiary font-medium font-body font-body-medium border-b">
             <Link className="flex gap-[5px] w-6 h-6 items-center">
@@ -118,22 +118,22 @@ const ProfileBar = () => {
       <div className={click ? "hidden" : "absolute top-[4.6rem] left-0 z-10"}>
         <ul className="md:hidden flex flex-col items-center md:gap-6 bg-white w-screen border">
           <Link to="/kategori">
-            <li className="w-screen h-[54px] md:hidden flex items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border">
+            <li className="w-screen h-[54px] md:hidden flex items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
               Kategory
             </li>
           </Link>
           <Link to="/profile">
-            <li className="w-screen h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
+            <li className="w-screen h-[54px] items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
               Profile Saya
             </li>
           </Link>
           <Link to="/profile">
-            <li className="w-screen h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
+            <li className="w-screen h-[54px] items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
               Kelas Saya
             </li>
           </Link>
-          <Link to="/profile">
-            <li className="w-screen h-[54px] items-center py-4 px-3 text-dark-secondary font-medium font-body font-body-medium border-b">
+          <Link to="/keranjang">
+            <li className="w-screen h-[54px] items-center py-4 px-3 text-dark-secondary hover:text-primary font-medium font-body font-body-medium border-b">
               Pesanan Saya
             </li>
           </Link>

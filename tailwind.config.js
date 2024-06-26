@@ -56,6 +56,7 @@ export default {
       },
       colors: {
         primary: "#3ECF4C",
+        error: "#B72315",
         "main-tertiary": "#F64920",
         "dark-primary": "rgba(34, 35, 37, 1)",
         "dark-secondary": "rgba(51, 51, 51, 0.68)",
@@ -64,6 +65,7 @@ export default {
         "light-secondary": "#C1C2C4",
         "light-disabled": "#9D9EA1",
         warning: "#B5A40D",
+        "info": "#0980E2",
       },
       borderColor: {
         "main-tertiary": "#F64920",
@@ -90,8 +92,8 @@ export default {
         regular: 400,
       },
       backgroundImage: {
-        course: "url(/public/images/background-course.jpeg)",
-        newsletter: "url(/public/images/background-newsletter.jpeg)",
+        course: "url(/images/background-course.jpeg)",
+        newsletter: "url(/images/background-newsletter.jpeg)"
       },
     },
   },

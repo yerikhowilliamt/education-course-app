@@ -6,7 +6,7 @@ const FormLogin = () => {
   const handleLogin = (event) => {
     event.preventDefault();
     window.location.href = "/beranda"
-  }
+    }
 
   const handleRegister = (event) => {
     event.preventDefault();
@@ -15,6 +15,7 @@ const FormLogin = () => {
 
   return (
     <form
+      onSubmit={handleLogin}
       className="w-full flex flex-col gap-6 items-center justify-between"
     >
       <InputLabel
@@ -22,7 +23,7 @@ const FormLogin = () => {
         type="email"
         name="email"
         classname="w-full p-2"
-      ></InputLabel>
+      />
       <InputLabel
         label="Kata Sandi"
         type="password"

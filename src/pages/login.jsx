@@ -8,7 +8,7 @@ const LoginPage = () => {
   return (
     <>
       <HeaderLayouts position="relative"/>
-      <MainLayouts>
+      <MainLayouts items="items-center">
         <FormLayouts
           title="Masuk ke Akun"
           description="Yuk, lanjutin belajarmu di videobelajar"
