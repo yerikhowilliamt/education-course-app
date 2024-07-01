@@ -61,7 +61,7 @@ const ListCart = () => {
   return (
     <>
       {items.map((item) => (
-        <div key={item?.id} className="flex gap-2 justify-center items-center bg-white p-2 border">
+        <div key={item?.id} className="flex gap-2 justify-center items-center bg-white p-2">
           <input
             type="checkbox"
             checked={selectedItems.includes(item?.id)}
