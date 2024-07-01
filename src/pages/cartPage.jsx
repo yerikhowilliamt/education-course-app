@@ -3,9 +3,9 @@ import MainLayouts from "../components/Layouts/MainLayouts";
 import FooterLayouts from "../components/Layouts/FooterLayouts";
 import CartLayouts from "../components/Layouts/CartLayouts";
 
+
+
 const CartPage = ({ page }) => {
-
-
   return (
     <>
       <HeaderLayouts
@@ -15,7 +15,7 @@ const CartPage = ({ page }) => {
         page={page}
       />
       <MainLayouts>
-        <CartLayouts/>
+        <CartLayouts />
       </MainLayouts>
       <FooterLayouts />
     </>

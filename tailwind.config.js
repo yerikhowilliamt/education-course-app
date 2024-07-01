@@ -93,7 +93,7 @@ export default {
       },
       backgroundImage: {
         course: "url(/images/background-course.jpeg)",
-        newsletter: "url(/images/background-newsletter.jpeg)"
+        newsletter: "url(/images/background-newsletter.jpeg)",
       },
     },
   },
